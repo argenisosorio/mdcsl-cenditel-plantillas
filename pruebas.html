@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>Plan por iteración</title>
+    <title>Pruebas</title>
     <!-- Bootstrap Styles - css
     ================================================== -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -93,56 +93,75 @@
         <div class="breadcrumb">
           <a href="index.html">Inicio</a>
           <span class="glyphicon glyphicon-chevron-right"></span>
-          <a href="administracion.html">Administración</a>
+          <a href="construccion.html">Construcción</a>
           <span class="glyphicon glyphicon-chevron-right"></span>
-          <a href="plan_iteracion.html">Plan por iteración</a>
+          <a href="pruebas.html">Pruebas</a>
         </div>
         <!-- End Breadcrumb -->
 
         <div class="page-header">
-          <h2>Plan por iteración</h2>
+          <h2>Pruebas</h2>
         </div>
 
-        <b>Actividad: Elaboración del plan por iteración de desarrollo</b>
+        <p><b>Plantilla de Pruebas Funcionales</b></p>
 
+        <p>Esta plantilla debe contener los casos de prueba para cada uno de los casos de uso definidos para el software, según se especifica en la tabla presentada a continuación.</p>
+
+        <p><b>Caso de prueba para el caso de uso "Título del caso de uso"</b></p>
+
+        <p><h4>Número del caso de prueba: NºXX</h4></p>
+
+        <p><b>Escenario</b>
         <br />
+        [Se indica si el caso de prueba se realiza para el flujo básico, para flujos alternativos o para requisitos especiales del caso de uso respectivo.]
+        </p>
+
+        <p>
+        <b>Objetivo</b>
         <br />
+        [Se indica el propósito que se persigue al ingresar u omitir datos de entrada al software para el escenario específico bajo el cual se plantea el caso de prueba.]
+        </p>
 
-        <p>A continuación se indican las tareas que componen esta actividad.</p>
+        <p>
+        <b>Pre-condición</b>
+        <br />
+        [Se indica el requisito que debe cumplir el software para poder ejecutar el caso de prueba, por lo general este requisito es la misma condición de entrada que se especifica en la descripción textual del caso de uso respectivo.]
+        </p>
 
-        <b>Tarea: Elaborar el plan para la iteración de desarrollo actual.</b>
+        <p>
+        <b>Pasos para realizar el caso de prueba</b>
+        <br />
+        [Se indican los pasos que debe llevar a cabo el probador en el software para ejecutar la prueba, por ejemplo: 1) Entrar a la función “Registrar proyecto”. 2) Ingresar los datos solicitados a excepción del título del proyecto, el cual debe dejarse en blanco. 3) Pulsar la opción “Guardar”.]
+        </p>
 
-        <b>Recomendaciones:</b>
+        <p>
+        <b>Salida esperada</b>
+        [Se indica el resultado que debe emitir el software, según el escenario de prueba, indicado en la descripción del caso de uso respectivo.]
+        </p>
 
+        <p>
+        <b>Salida obtenida</b>
+        [Se indica si el comportamiento del software al aplicar el caso de prueba respectivo es igual o diferente a la salida esperada. Una salida obtenida que sea diferente a la salida esperada se considera como un error o falla en el software.]
+        </p>
+
+        <hr />
+
+        <p><b>Plantilla de Pruebas No Funcionales</b></p>
+
+        <b>Ambiente de Prueba</b>
         <ul>
-          <li><p>En el plan de la iteración se indican las tareas a realizar para la construcción de las funcionalidades correspondientes a una iteración, según se plantea en el plan del proyecto. En este plan se deben indicar los responsables de cada tarea y el tiempo de entrega para los productos a obtener en las mismas.</p></li>
-          <li>Para cada una de las iteraciones indicadas en el plan del proyecto se debe generar una planificación de tareas.</li>
+          <li><p>Recursos lógicos: [Se indican las herramientas a utilizar para realizar las pruebas, por ejemplo, herramientas automatizadas.]</p></li>
+          <li><p>Recursos fìsicos: [Se indican las características del equipo (hardware) a utilizar para realizar las pruebas, por ejemplo, tipo de computador y su velocidad, tipo de memoria, características de disco duro, etc.]</p></li>
         </ul>
 
-        <b>Herramientas:</b>
-
+        <b>Variables en base a las cuales se realizan las pruebas:</b>
         <ul>
-          <li><p>Existen varias herramientas para la planificación de tareas, entre ellas: Planner, XPTraker, los sistemas de asignación de tareas incluidos en plataformas de desarrollo de software como Gforge, SourceForge?, Trac, entre otras.</p></li>
-          <li><p>En el caso de la Fundación Cenditel se propone hacer uso del sistema de tickets que ofrece la plataforma Trac, a fin de utilizar el mismo para la definición y asignación de tareas respectivas al desarrollo de funcionalidades del software.</p></li>
+          <li>[Se indican las variables asociadas a los atributos de calidad del software que se estudiarán con las pruebas no funcionales. Por ejemplo, para pruebas de rendimiento se pueden estudiar variables como: tiempos de respuesta, capacidad de almacenamiento de datos, entre otras.]</li>
         </ul>
 
-        <b>Productos:</b>
+        <p><b>Flujograma de actividades</b></p>
 
-        <ul>
-          <li>Plan de la iteración actual.</li>
-        </ul>
-
-        <b>Responsables:</b>
-
-        <ul>
-          <li>Líder del Proyecto.</li>
-        </ul>
-
-        <b>Colaboradores:</b>
-
-        <ul>
-          Equipo de Desarrollo.
-        </ul>
+        <img src="imagenes/plantuml6.png">
 
       </div> <!-- End well -->
 
