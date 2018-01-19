@@ -4,6 +4,6 @@ Sitio web creado para mostrar la MDSL y que sirva como guía para la construcci�
 
 Permite descargar la metodología en [Formato PDF](https://argenisosorio.github.io/mdcsl-cenditel)
 
-[Visitar sitio](https://argenisosorio.github.io/mdcsl-cenditel)
+[Visitar sitio](https://argenisosorio.github.io/mdsl-cenditel/)
 
 
