@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Análisis y Diseño</title>
+    <!-- Bootstrap Styles - css
+    ================================================== -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Styles - css
+    ================================================== -->
+    <link href="css/theme.css" rel="stylesheet">
+    <!-- Others - js
+    ================================================== -->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="js/holder.min.js"></script>
+    <!-- Jquery - js
+    ================================================== -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')</script>
+    <!-- Bootstrap - js
+    ================================================== -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bug fix - js
+    ================================================== -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </head>
+  <body>
+
+    <!-- Fixed navbar
+    ================================================== -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Metodología de Desarrollo de Software Libre (MDSL) Versión 2.0</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="docs/mpdcsl.pdf" target="_blank">MDSL en PDF</a></li>
+            <li><a href="https://github.com/argenisosorio/mdcsl-cenditel" target="_blank">Verme en Github</a></li>
+            <!--li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li-->
+          </ul>
+          <!--ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul-->
+        </div>
+      </div>
+    </nav><!-- End navbar -->
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- well
+      ================================================== -->
+      <div class="jumbotron">
+        <div align="center">
+          <h1>Metodología de Desarrollo de Software Libre (MDSL) Versión 2.0</h1>
+        </div>
+
+        <br />
+
+        <!-- Breadcrumb
+        ================================================== -->
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <a href="construccion.html">Construcción</a>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <a href="analisis_diseno2.html">Análisis y Diseño</a>
+        </div>
+        <!-- End Breadcrumb -->
+
+        <div class="page-header">
+          <h2>Análisis y Diseño</h2>
+        </div>
+
+        <p>Esta fase comprende la definición de la arquitectura del software, la especificación de los datos persistentes y el diseño de la interfaz de usuario. En el caso de la arquitectura es conveniente destacar que ésta constituye un aspecto a considerar, con mayor importancia, para aplicaciones de software que resulten complejas en términos del número de requerimientos y/o el impacto de los mismos (Hofmeister et al., 2000).</p>
+
+        <p>La arquitectura del software, la especificación de datos persistentes y el diseño de interfaz de usuario pueden construirse de forma incremental en cada iteración de desarrollo, con base a los requerimientos funcionales y no funcionales que se aborden en cada iteración.</p>
+
+        <p>A continuación se indican las actividades y tareas que componen esta fase.</p>
+
+        <h4>Actividad: Especificación de datos persistentes</h4>
+
+        <p><b>Tarea: Modelar los datos persistentes que maneja el software.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>Para modelar los datos persistentes se debe seleccionar el tipo de modelo en el que se realizará el almacén de datos. Entre los tipos de modelos mas utilizados se encuentran: orientado a objetos, entidad-relación, basado en documentos. Es posible realizar transformaciones entre estos modelos.</p></li>
+          <li><p>Los objetos o entidades que maneja el software se pueden identificar en la descripción textual de los casos de uso.</p></li>
+          <li><p>Los diagramas de clases elaborados como parte de la arquitectura del software constituyen en sí un modelo de datos, en caso de utilizar el modelo de datos orientado objetos.</p></li>
+          <li><p>En los casos en los que se trabaje con el modelo de datos relacional se requiere modelar los datos del software en base al modelo entidad-relación.</p></li>
+          <li><p>En la medida de lo posible, se recomienda utilizar tipos básicos para los campos de las relaciones, clases o documentos, de tal manera que la aplicación de software admita el uso de diversos gestores de datos, que se ajusten a las necesidades del despliegue.</p></li>
+          <li><p>Cuando se utilizan herramientas (editores gráficos) para modelar los datos es necesario tener en cuenta algunas pautas tales como configurar</p></li>
+        </ul>
+
+        La salida de los scripts en SQL estándar, y mantener actualizado el modelo cuando ocurren cambios en los scripts de creación de la base de datos.
+
+        <ul>
+          <li><p>Se debe tener como premisa que la aplicación podrá cambiar de gestor de datos, incluso de modelo de datos, por lo tanto, es conveniente ceñirse a estándares y patrones de base de datos, como por ejemplo, los definidos en SQL, en el Modelo-Vista-Controlador o en ORM (Object-Relational Mapping).</p></li>
+        </ul>
+
+        <b>Herramientas:</b>
+
+        <ul>
+          <li><p>Para elaborar diagramas de entidad-relación se pueden utilizar herramientas como: DIA, ER Visual, BD Designer Fork (principalmente para trabajar con base de datos MySQUL), Druid.</p></li>
+          <li><p>El modelo de datos del software puede registrarse en la planilla <a href="analisis_diseno.html">Modelo de datos persistentes (Base de datos).</a></p></li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li>Modelo de datos persistentes.</li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li>Analistas y/o el Arquitecto de Software.</li>
+        </ul>
+
+        <p><b>Tarea: Especificar los datos a intercambiar con otras aplicaciones de software.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>La interoperabilidad entre aplicaciones de software constituye un atributo de calidad a considerar en el desarrollo de aplicaciones que requieran el intercambio de datos con otras aplicaciones, razón por la cual es necesario especificar los datos a intercambiar, incluyendo en ello la definición de los formatos a utilizar para realizar dicho intercambio.</p></li>
+        </ul>
+
+        <b>Herramientas:</b>
+
+        <ul>
+          <li><p>La especificación de datos a intercambiar puede registrarse en en la planilla Modelo de datos persistentes (Base de datos).</p></li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li>Especificación de datos a intercambiar.</li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li>Analistas y/o el Arquitecto de Software.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Actividad: Definición de la arquitectura del software</h4>
+
+        <p><b>Tarea: Definir la arquitectura del software.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>Al momento de definir la arquitectura del software, es decir, sus componentes y la interacción (comunicación) entre éstos, se requiere tener en cuenta no solo las funcionalidades del software y las limitaciones tecnológicas existentes, sino también los atributos de calidad asociados al software, pues la arquitectura que se defina puede inhibir o facilitar el cumplimiento de dichos atributos (Bass et al., 1998).
+          Por ejemplo, el atributo de calidad respectivo al desempeño del software depende de los componentes de se definan para éste y de su ubicación en los procesadores, así como de los caminos de comunicación entre estos componentes, etc.</p></li>
+          <li><p>La descripción textual de los casos de uso constituyen el insumo base para identificar los componentes del software.</p></li>
+          <li><p>Para el desarrollo de aplicaciones de software complejas y de gran escala se recomienda utilizar patrones y/o estilos arquitectónicos, así como patrones de diseño, pues éstos permiten mejorar la calidad de estas aplicaciones. Para la selección de patrones y estilos es necesario tener presente que éstos pueden facilitar el cumplimiento de ciertos atributos de calidad en un software, pero a su vez pueden inhibir el cumplimiento de otros atributos. Por ejemplo, el patrón arquitectónico Modelo-Vista-Controlador facilita el cumplimiento de atributos de calidad asociados a la funcionalidad y la mantenibilidad, pero dificulta el cumplimiento de atributos de calidad asociados al desempeño y a la portabilidad del software (Buschmann et al., 1996).</p></li>
+          <li><p>Es importante que se estudien varias alternativas de arquitecturas, de modo que se pueda seleccionar de éstas aquella que permita cumplir en mayor medida con los requerimientos funcionales y los atributos de calidad establecidos para el software, que facilite futuras modificaciones al mismo y que sea factible conforme las limitaciones tecnológicas que puedan existir.</p></li>
+          <li><p>La arquitectura de un software puede ser representada a través de diferentes diagramas o vistas arquitectónicas, las cuales constituyen las diferentes perspectivas del diseño de una aplicación (Kruchten, 1999). Entre los diagramas utilizados para representar vistas arquitectónicas se encuentran: diagramas de clases, diagramas de secuencia, diagramas de estado, diagramas de componentes, entre otros. Cabe destacar que no es obligatorio diseñar todas las vistas arquitectónicas de un software, basta con plantear aquellas que se consideren pertinentes según la complejidad y alcance del software, que permitan contar con una visión de éste que sirva de apoyo en las diferentes fases de construcción del mismo, así como en sus procesos de mantenimiento.</p></li>
+        </ul>
+
+        <b>Herramientas:</b>
+
+        <ul>
+          <li><p>Existen varias herramientas para elaborar los diagramas de la arquitectura de un software, entre ellas: Dia, Umbrello, Bonita, CASEUML, ArgoUML, BOUML, entre otras.</p></li>
+          <li><p>En el caso de la Fundación Cenditel se plantea utilizar para elaborar los diagramas de arquitectura de un software la herramienta Platuml contenida en el plugin de la plataforma Trac desarrollado para la metodología. Entre los diagramas que se pueden elaborar con esta herramienta se encuentran: diagramas de clases, de secuencia, de estado, entre otros.</p></li>
+          <li><p>Los diagramas en base a los cuales se represente la arquitectura del software pueden registrarse en la plantilla Arquitectura de software.</p></li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li>Diagramas que representan la arquitectura del software.</li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li>Arquitecto de Software.</li>
+        </ul>
+
+        <b>Colaboradores:</b>
+
+        <ul>
+          <li>Analistas, otros integrantes del Equipo de Desarrollo.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Actividad: Diseño del prototipo no funcional de la interfaz de usuario</h4>
+
+        <p><b>Tarea: Diseñar las pantallas no funcionales correspondientes a las interfaces gráficas del software.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>Por lo general toda interfaz gráfica se compone de los siguientes elementos (Baéz, Castañeda, Castañeda, 2005): a) Encabezado, éste se refiere a un logo o imagen de identificación del software. Se recomienda utilizar frames para que el encabezado se cargue solo una vez en las pantallas de interfaz del software. b) Menú, en éste se muestra el listado de las funcionalidades que ofrece el software, se recomienda que el menú se ubique, de ser posible, en varios lugares de las pantallas de interfaz. c) Zona de contenido, esta muestra las operaciones que puede ejecutar el usuario conformes a las funcionalidades que ofrece el software. d) Zona de mensajes, en esta se muestran los mensajes de tipo informativo, de error y de éxito en una operación del software.</p></li>
+          <li><p>Se recomienda utilizar un diagrama de navegabilidad entre las pantallas diseñadas para representar la interfaz de usuario, con lo cual se podrá mostrar el paso de una pantalla a otra.</p></li>
+          <li><p>Teniendo en cuenta la importancia que adquiere la interfaz de usuario, en términos de usabilidad, se plantean a continuación algunas recomendaciones a considerar para el diseño de la interfaz gráfica: a) La interfaz de las operaciones que ejecuta el software debe mantener un estándar visual. Por ejemplo, de ser posible, las funciones para modificar o eliminar información deben seguir un mismo esquema de presentación para las distintas funciones u operaciones del software en las cuales se requieran éstas. b) La estructura de iconos o botones que sirven de enlace a las funciones que ejecuta el software debe ser lo más sencilla posible, es decir, se debe evitar la ejecución de varios pasos a efectuar en el software para acceder a alguna de sus funciones. c) La interfaz debe mantener una estandarización en relación al formato de los iconos o botones mostrados. d) Los botones o iconos utilizados en la interfaz pueden mostrar textos en los cuales se indique que función cumple cada uno de éstos. Para ello se recomienda hacer uso de los tool tips. e) Los tipos y tamaños de las letras utilizadas en las pantallas deben facilitar la visualización de los textos o frases que se presentan en la interfaz. f) Los colores utilizados en cada pantalla deben ser contrastantes entre sí, a fin de facilitar la lectura de la información mostrada en la interfaz. g) La interfaz debe mantener una estandarización en relación al idioma de las personas que usarán el software.</p></li>
+        </ul>
+
+        <b>Herramientas:</b>
+
+        <ul>
+          <li>La herramienta Pencil se puede utilizar para elaborar las pantallas del prototipo no funcional de la interfaz de usuario.
+            Este prototipo puede registrarse en el plantilla Prototipo no funcional de la interfaz de usuario.</li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li>Prototipo no funcional de la interfaz de usuario.</li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li>Diseñador Gráfico.</li>
+        </ul>
+
+        <b>Colaboradores:</b>
+
+        <ul>
+          <li>Equipo de Desarrollo, Usuarios.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Tarea: Validar el prototipo no funcional de la interfaz con los usuarios.</h4>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li>Prototipo no funcional de la interfaz validada por los Usuarios.</li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li>Diseñador Gráfico y Usuarios.</li>
+        </ul>
+
+      </div> <!-- End well -->
+
+      <br />
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
