@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Codificación</title>
+    <!-- Bootstrap Styles - css
+    ================================================== -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Styles - css
+    ================================================== -->
+    <link href="css/theme.css" rel="stylesheet">
+    <!-- Others - js
+    ================================================== -->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="js/holder.min.js"></script>
+    <!-- Jquery - js
+    ================================================== -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')</script>
+    <!-- Bootstrap - js
+    ================================================== -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bug fix - js
+    ================================================== -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </head>
+  <body>
+
+    <!-- Fixed navbar
+    ================================================== -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Metodología de Desarrollo de Software Libre (MDSL) Versión 2.0</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="docs/mpdcsl.pdf" target="_blank">MDSL en PDF</a></li>
+            <li><a href="https://github.com/argenisosorio/mdsl-cenditel" target="_blank">Verme en Github</a></li>
+            <!--li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li-->
+          </ul>
+          <!--ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul-->
+        </div>
+      </div>
+    </nav><!-- End navbar -->
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- well
+      ================================================== -->
+      <div class="jumbotron">
+        <div align="center">
+          <h1>Metodología de Desarrollo de Software Libre (MDSL) Versión 2.0</h1>
+        </div>
+
+        <br />
+
+        <!-- Breadcrumb
+        ================================================== -->
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <a href="construccion.html">Construcción</a>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <a href="codificacion2.html">Codificación</a>
+        </div>
+        <!-- End Breadcrumb -->
+
+        <div class="page-header">
+          <h2>Codificación</h2>
+        </div>
+
+        <p>En esta fase se codifican las funcionalidades de la aplicación de software correspondientes a la iteración actual, se construye la interfaz de usuario y la base de datos. De esta manera, en esta fase, con cada iteración de desarrollo, se obtiene una nueva versión de la aplicación, clasificada como versión beta, es decir, una versión sobre la cual se deben realizar un conjunto de pruebas como pruebas funcionales y no funcionales.</p>
+
+        <p>A continuación se indican las actividades y tareas que componen esta fase.</p>
+
+        <h3>Actividad: Construcción de la base de datos</h3>
+
+        <p><b>Tarea: Construir la base de datos conforme al modelo de datos persistentes.<p><b>
+
+        <b>Herramientas:</b>
+
+        <ul>
+          <li><p>Algunas herramientas que permiten generar los scripts para base de datos conforme al modelo de datos: ER Visual, BD Designer Fork (principalmente para trabajar con base de datos MySQUL).</p></li>
+        </ul>
+
+        <b>Productos:</b>
+        
+        <ul>
+          <li><p>Base de datos.</p></li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li><p>Programadores.</p></li>
+        </ul>
+
+        <b>Colaboradores:</b> 
+
+        <ul>
+          <li><p>Equipo de Desarrollo.</p></li>
+        </ul>
+
+        <hr />
+
+        <h3>Actividad: Adaptación y/o codificación de los componentes requeridos para construir las funcionalidades del software</h3>
+
+        <p><b>Tarea: Codificar los componentes requeridos para construir las funcionalidades asociadas a la iteración actual.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>Para agilizar la fase de codificación y mejorar la calidad del software se recomienda el uso de framework de desarrollo, así como de patrones de programación y componentes reutilizables que puedan ser adaptados según se requiera.</p></li>
+          <li><p>Entre los patrones de programación que se pueden utilizar se encuentran: patrón de acumulación, patrón lectura de datos, patrón de conteo (Mateu, s.f.); patrón Super Loop, patrón Background / Foreground (Alvarez, s.f.); entre otros.</p></li>
+        </ul>
+
+        <b>Productos:</b>
+        <ul>
+          <li><p>Componentes implementados, componentes adaptados.</p></li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li><p>Programadores.</p></li>
+        </ul>
+
+        <hr />
+
+        <p><b>Tarea: Realizar las pruebas unitarias a los componentes adaptados y/o codificados y corregir los errores encontrados.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>A fin de evitar errores al momento de integrar los componentes del software se recomienda elaborar pruebas unitarias para verificar el funcionamiento, por separado, de cada uno de estos componentes.</p></li>
+          <li><p>Para agilizar las actividades asociadas a la aplicación de pruebas unitarias se recomienda la automatización de éstas.</p></li>
+        </ul>
+
+        <b>Herramientas:</b>
+
+        <ul>
+          <li><p>Para aplicar pruebas unitarias se pueden utilizar herramientas como: PhpUnit? (para lenguaje PHP), Junit (para lenguaje Java) , xUnit (para distintos lenguajes de programación), entre otras.</p></li>
+        </ul>
+
+        <b>Productos:</b>
+        <ul>
+          <li><p>Errores corregidos.</p></li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li><p>Programadores.</p></li>
+        </ul>
+
+        <hr />
+
+        <h3>Actividad: Construcción de la interfaz de usuario</h3>
+
+        <p><b>Tarea: Construir la interfaz de usuario correspondiente a las funcionalidades asociadas a la iteración actual.</b></p>
+
+        <b>Herramientas:</b>
+        <ul>
+          <li><p>Para crear interfaces de usuario se pueden utilizar herramientas como: TkInter?, wxPython, PyGTK, PyQt, estas herramientas permiten crear interfaces gráficas en Python. También se pueden utilizar: Codeblocks, CodeLite?, Gtkmm, entre otras.</p></li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li><p>Interfaz gráfica del software.</p></li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li><p>Diseñador Gráfico, Programadores.</p></li>
+        </ul>
+
+        <hr />    
+
+        <h3>Actividad: Documentación del código fuente</h3>
+
+        <p><b>Tarea: Documentar el código fuente.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>La documentación del código fuente representa una actividad fundamental para facilitar los procesos de apropiación del software (mantenibilidad), por lo cual se recomienda realizar la documentación de todos los componentes de éste, tanto los codificados como los reutilizados.</p></li>
+          <li><p>Se sugiere que la documentación de cada componente (función, método, clase), como mínimo, haga referencia a qué hace el componente, qué parámetros hay que pasarle y qué devuelve (Fernández, 2008).</p></li>
+        </ul>
+
+        <b>Herramientas:</b>
+
+        <ul>
+          <li><p>Para generar la documentación del código fuente se pueden utilizar herramientas como: Doxygen, phpDocumentor, entre otras. </p></li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li><p>Código documentado.</p></li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li><p>Programadores.</p></li>
+        </ul>
+
+        <hr />
+
+        <h3>Actividad: Gestión de las versiones del software a través de un sistema de control de versiones</h3>
+
+        <p><b>Tarea: Colocar el código fuente desarrollado en cada iteración en el sistema de control de versiones que se utilice en el proyecto.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>El uso de sistemas de control de versiones es muy importante para el manejo organizado de las distintas versiones que se desarrollan para un software, pues éstos permiten gestionar los diversos cambios que se realizan sobre estas versiones, facilitando así el trabajo colaborativo y cooperativo en torno al desarrollo de software.</p></li>
+        </ul>
+
+        <b>Herramientas:</b>
+
+        <ul>
+          <li><p>Existen muchas herramientas para el control de versiones de software, entre ellas tenemos: CVS, SVK, Subversion, SourceSafe?, Mercurial, Bazaar, GIT, Darcs.</p></li>
+          <li><p>La mayoría de las plataformas para gestión de proyectos de software contienen sistemas para el control de versiones, tal es el caso de la plataforma Trac que se utiliza en la Fundación Cenditel.</p></li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li><p>Código fuente del software contenido en el sistema de control de versiones.</p></li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li><p>Programadores.</p></li>
+        </ul>
+
+        <hr />
+
+        <h3>Actividad: Automatización del proceso de instalación/desinstalación del software</h3>
+
+        <p><b>Tarea: Codificar los pasos requeridos para instalar y desinstalar el software desarrollado.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>Es importante que durante el proceso de instalación se permita al usuario suspender dicho proceso, y que se muestren a éste mensajes de información sobre el éxito o no de la instalación. De igual manera, para facilitar el uso del software se recomienda que durante el proceso de instalación se creen los iconos para el acceso directo a éste.</p></li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li><p>Proceso de instalación/desinstalación automatizado.</p></li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li><p>Programadores.</p></li>
+        </ul>
+
+        <hr />
+
+        <h3>Actividad: Corrección de errores</h3>
+
+        <p><b>Tarea: Corregir los errores reportados.</b></p>
+
+        <b>Recomendaciones:</b>
+
+        <ul>
+          <li><p>Al utilizar un sistema de control de errores cada Programador puede tener acceso a los errores que se le asignen para su respectiva corrección, así como también podrán acceder a la información donde se describe el error respectivo (reporte).</p></li>
+          <li><p>Una vez corregido el error se recomienda al Programador registrar en el sistema de control de errores la causa del error y la corrección realizada. Esto permite llevar un historial sobre formas de resolver errores, el cual puede ser utilidad para solventar en el futuro errores iguales o similares que se puedan presentar.</p></li>
+        </ul>
+
+        <b>Productos:</b>
+
+        <ul>
+          <li><p>Código corregido.</p></li>
+          <li><p>Registro de correcciones en el sistema de control de errores.</p></li>
+        </ul>
+
+        <b>Responsables:</b>
+
+        <ul>
+          <li><p>Programadores.</p></li>
+        </ul>
+
+      </div>
+      <!-- End well -->
+
+      <!-- Footer
+      ================================================== -->
+      <div align="center">
+        <img class="banner-cenditel" src="imagenes/banner-cenditel.png">
+      </div>
+      <!-- End Footer -->
+
+    </div> <!-- /container -->
+    
+  </body>
+</html>
