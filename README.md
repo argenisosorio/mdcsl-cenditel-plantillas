@@ -4,4 +4,4 @@ Sitio web creado para mostrar la MDCSL y que sirva como guía para la construcci
 
 Permite descargar la metodología en [Formato PDF](https://argenisosorio.github.io/mdsl-cenditel/docs/mpdcsl.pdf)
 
-[Visitar sitio](https://argenisosorio.github.io/mdsl-cenditel/)
+[Visitar sitio](https://argenisosorio.github.io/mdcsl-cenditel-plantillas/)
